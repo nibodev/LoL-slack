@@ -1,6 +1,7 @@
 const app = require('koa')()
 const router = require('koa-router')()
 const bodyParser = require('koa-bodyparser')
+require('dotenv').load()
 
 const lol = require('./lib')
 
@@ -12,6 +13,6 @@ app
   .use(router.routes())
   .use(router.allowedMethods())
 
-app.listen(3000);
+app.listen(3001);
 
-console.log('listening on port 3000')
+console.log('listening on port 3001')

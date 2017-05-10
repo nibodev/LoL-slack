@@ -10,6 +10,7 @@
   "author": "Rickard Laurin <rickard.laurin@gmail.com> (http://rickardlaurin.se/)",
   "license": "MIT",
   "dependencies": {
+    "dotenv": "^4.0.0",
     "highland": "^2.7.4",
     "koa": "^1.2.0",
     "koa-bodyparser": "^2.0.1",

@@ -2,7 +2,7 @@ const BASE = process.env.LOL_BASE
 const KEY = process.env.RIOT_API_KEY
 
 function prepUrl (url, region, base, options) {
-  region = region || 'eune'
+  region = region || 'br'
   base = base || BASE
   options = options || ''
 
