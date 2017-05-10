@@ -38,7 +38,7 @@ function championById (summoner, id) {
  * @return {Promise}
  */
 function championMasteryAll (summoner, region, platform) {
-  const url = prepUrl(`/championmastery/location/${platform}/player/${summoner.id}/champions`, null, 'https://eune.api.pvp.net')
+  const url = prepUrl(`/championmastery/location/${platform}/player/${summoner.id}/champions`, null, 'https://br.api.pvp.net')
 
   return fetch(url)
 }
@@ -77,7 +77,7 @@ function league (summoner, region) {
  * @return {Promise}
  */
 function masteryScore (summoner, region, platform) {
-  const url = prepUrl(`/championmastery/location/${platform}/player/${summoner.id}/score`, null, 'https://eune.api.pvp.net')
+  const url = prepUrl(`/championmastery/location/${platform}/player/${summoner.id}/score`, null, 'https://br.api.pvp.net')
 
   return fetch(url)
 }
@@ -189,7 +189,7 @@ function teamBySummonerId (summoner, region) {
  * @return {Promise}
  */
 function topThreeChampions (summoner, region, platform) {
-  const url = prepUrl(`/championmastery/location/${platform}/player/${summoner.id}/topchampions`, null, 'https://eune.api.pvp.net')
+  const url = prepUrl(`/championmastery/location/${platform}/player/${summoner.id}/topchampions`, null, 'https://br.api.pvp.net')
 
   return fetch(url)
 }
