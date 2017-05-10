@@ -13,6 +13,6 @@ app
   .use(router.routes())
   .use(router.allowedMethods())
 
-app.listen(3001);
+app.listen(process.env.PORT || 3001);
 
 console.log('listening on port 3001')
